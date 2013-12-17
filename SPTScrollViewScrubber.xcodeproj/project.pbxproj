@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B47964E18609CD6003429BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B47964D18609CD6003429BD /* Foundation.framework */; };
+		7B47965018609CD6003429BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B47964F18609CD6003429BD /* CoreGraphics.framework */; };
+		7B47965218609CD6003429BD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B47965118609CD6003429BD /* UIKit.framework */; };
+		7B47965A18609CD7003429BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B47965918609CD7003429BD /* main.m */; };
+		7B47965E18609CD7003429BD /* SPTScrollViewScrubberSample_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B47965D18609CD7003429BD /* SPTScrollViewScrubberSample_AppDelegate.m */; };
+		7B47968218609F22003429BD /* Circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B47967D18609F22003429BD /* Circle.png */; };
+		7B47968318609F22003429BD /* CollectionView.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B47967E18609F22003429BD /* CollectionView.png */; };
+		7B47968418609F22003429BD /* TableView.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B47967F18609F22003429BD /* TableView.png */; };
+		7B47968518609F22003429BD /* ScrollView.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B47968018609F22003429BD /* ScrollView.png */; };
+		7B47968618609F22003429BD /* Wave.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B47968118609F22003429BD /* Wave.png */; };
+		7B47968A18609F91003429BD /* SPTScrollViewScrubberController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B47968918609F91003429BD /* SPTScrollViewScrubberController.m */; };
+		7B47969218609FCA003429BD /* SPTScrollViewScrubberSample_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B47968B18609FCA003429BD /* SPTScrollViewScrubberSample_Storyboard.storyboard */; };
+		7B47969318609FCA003429BD /* SPTScrollViewScrubberSample_TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B47968D18609FCA003429BD /* SPTScrollViewScrubberSample_TableViewController.m */; };
+		7B47969418609FCA003429BD /* SPTScrollViewScrubberSample_ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B47968F18609FCA003429BD /* SPTScrollViewScrubberSample_ScrollViewController.m */; };
+		7B47969518609FCA003429BD /* SPTScrollViewScrubberSample_CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B47969118609FCA003429BD /* SPTScrollViewScrubberSample_CollectionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7B47964A18609CD6003429BD /* SPTScrollViewScrubber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPTScrollViewScrubber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B47964D18609CD6003429BD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B47964F18609CD6003429BD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7B47965118609CD6003429BD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7B47965518609CD7003429BD /* SPTScrollViewScrubberSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SPTScrollViewScrubberSample-Info.plist"; sourceTree = "<group>"; };
+		7B47965918609CD7003429BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B47965B18609CD7003429BD /* SPTScrollViewScrubberSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SPTScrollViewScrubberSample-Prefix.pch"; sourceTree = "<group>"; };
+		7B47965C18609CD7003429BD /* SPTScrollViewScrubberSample_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPTScrollViewScrubberSample_AppDelegate.h; sourceTree = "<group>"; };
+		7B47965D18609CD7003429BD /* SPTScrollViewScrubberSample_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPTScrollViewScrubberSample_AppDelegate.m; sourceTree = "<group>"; };
+		7B47967D18609F22003429BD /* Circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Circle.png; sourceTree = "<group>"; };
+		7B47967E18609F22003429BD /* CollectionView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CollectionView.png; sourceTree = "<group>"; };
+		7B47967F18609F22003429BD /* TableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableView.png; sourceTree = "<group>"; };
+		7B47968018609F22003429BD /* ScrollView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScrollView.png; sourceTree = "<group>"; };
+		7B47968118609F22003429BD /* Wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wave.png; sourceTree = "<group>"; };
+		7B47968818609F91003429BD /* SPTScrollViewScrubberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTScrollViewScrubberController.h; sourceTree = "<group>"; };
+		7B47968918609F91003429BD /* SPTScrollViewScrubberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTScrollViewScrubberController.m; sourceTree = "<group>"; };
+		7B47968B18609FCA003429BD /* SPTScrollViewScrubberSample_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SPTScrollViewScrubberSample_Storyboard.storyboard; sourceTree = "<group>"; };
+		7B47968C18609FCA003429BD /* SPTScrollViewScrubberSample_TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTScrollViewScrubberSample_TableViewController.h; sourceTree = "<group>"; };
+		7B47968D18609FCA003429BD /* SPTScrollViewScrubberSample_TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTScrollViewScrubberSample_TableViewController.m; sourceTree = "<group>"; };
+		7B47968E18609FCA003429BD /* SPTScrollViewScrubberSample_ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTScrollViewScrubberSample_ScrollViewController.h; sourceTree = "<group>"; };
+		7B47968F18609FCA003429BD /* SPTScrollViewScrubberSample_ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTScrollViewScrubberSample_ScrollViewController.m; sourceTree = "<group>"; };
+		7B47969018609FCA003429BD /* SPTScrollViewScrubberSample_CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTScrollViewScrubberSample_CollectionViewController.h; sourceTree = "<group>"; };
+		7B47969118609FCA003429BD /* SPTScrollViewScrubberSample_CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTScrollViewScrubberSample_CollectionViewController.m; sourceTree = "<group>"; };
+		7B4796961860A29F003429BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		7B4796971860A29F003429BD /* AppleDocSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AppleDocSettings.plist; sourceTree = "<group>"; };
+		7B4796981860B79A003429BD /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B47964718609CD6003429BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B47965018609CD6003429BD /* CoreGraphics.framework in Frameworks */,
+				7B47965218609CD6003429BD /* UIKit.framework in Frameworks */,
+				7B47964E18609CD6003429BD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B47964118609CD6003429BD = {
+			isa = PBXGroup;
+			children = (
+				7B4796961860A29F003429BD /* README.md */,
+				7B4796981860B79A003429BD /* LICENSE */,
+				7B4796971860A29F003429BD /* AppleDocSettings.plist */,
+				7B47968718609F4B003429BD /* SPTScrollViewScrubberController */,
+				7B47965318609CD6003429BD /* SPTScrollViewScrubberSample */,
+				7B47964C18609CD6003429BD /* Frameworks */,
+				7B47964B18609CD6003429BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B47964B18609CD6003429BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B47964A18609CD6003429BD /* SPTScrollViewScrubber.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B47964C18609CD6003429BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B47964D18609CD6003429BD /* Foundation.framework */,
+				7B47964F18609CD6003429BD /* CoreGraphics.framework */,
+				7B47965118609CD6003429BD /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B47965318609CD6003429BD /* SPTScrollViewScrubberSample */ = {
+			isa = PBXGroup;
+			children = (
+				7B47965C18609CD7003429BD /* SPTScrollViewScrubberSample_AppDelegate.h */,
+				7B47965D18609CD7003429BD /* SPTScrollViewScrubberSample_AppDelegate.m */,
+				7B47968C18609FCA003429BD /* SPTScrollViewScrubberSample_TableViewController.h */,
+				7B47968D18609FCA003429BD /* SPTScrollViewScrubberSample_TableViewController.m */,
+				7B47968E18609FCA003429BD /* SPTScrollViewScrubberSample_ScrollViewController.h */,
+				7B47968F18609FCA003429BD /* SPTScrollViewScrubberSample_ScrollViewController.m */,
+				7B47969018609FCA003429BD /* SPTScrollViewScrubberSample_CollectionViewController.h */,
+				7B47969118609FCA003429BD /* SPTScrollViewScrubberSample_CollectionViewController.m */,
+				7B47968B18609FCA003429BD /* SPTScrollViewScrubberSample_Storyboard.storyboard */,
+				7B47967C18609ED3003429BD /* Images */,
+				7B47965418609CD7003429BD /* Supporting Files */,
+			);
+			path = SPTScrollViewScrubberSample;
+			sourceTree = "<group>";
+		};
+		7B47965418609CD7003429BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B47965518609CD7003429BD /* SPTScrollViewScrubberSample-Info.plist */,
+				7B47965918609CD7003429BD /* main.m */,
+				7B47965B18609CD7003429BD /* SPTScrollViewScrubberSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7B47967C18609ED3003429BD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7B47967D18609F22003429BD /* Circle.png */,
+				7B47967E18609F22003429BD /* CollectionView.png */,
+				7B47967F18609F22003429BD /* TableView.png */,
+				7B47968018609F22003429BD /* ScrollView.png */,
+				7B47968118609F22003429BD /* Wave.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		7B47968718609F4B003429BD /* SPTScrollViewScrubberController */ = {
+			isa = PBXGroup;
+			children = (
+				7B47968818609F91003429BD /* SPTScrollViewScrubberController.h */,
+				7B47968918609F91003429BD /* SPTScrollViewScrubberController.m */,
+			);
+			path = SPTScrollViewScrubberController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B47964918609CD6003429BD /* SPTScrollViewScrubber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B47967618609CD7003429BD /* Build configuration list for PBXNativeTarget "SPTScrollViewScrubber" */;
+			buildPhases = (
+				7B47964618609CD6003429BD /* Sources */,
+				7B47964718609CD6003429BD /* Frameworks */,
+				7B47964818609CD6003429BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SPTScrollViewScrubber;
+			productName = SPTScrollViewScrubber;
+			productReference = 7B47964A18609CD6003429BD /* SPTScrollViewScrubber.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B47964218609CD6003429BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPTScrollViewScrubberSample_;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tim Mecking";
+			};
+			buildConfigurationList = 7B47964518609CD6003429BD /* Build configuration list for PBXProject "SPTScrollViewScrubber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B47964118609CD6003429BD;
+			productRefGroup = 7B47964B18609CD6003429BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B47964918609CD6003429BD /* SPTScrollViewScrubber */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B47964818609CD6003429BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B47968618609F22003429BD /* Wave.png in Resources */,
+				7B47968218609F22003429BD /* Circle.png in Resources */,
+				7B47968518609F22003429BD /* ScrollView.png in Resources */,
+				7B47968318609F22003429BD /* CollectionView.png in Resources */,
+				7B47969218609FCA003429BD /* SPTScrollViewScrubberSample_Storyboard.storyboard in Resources */,
+				7B47968418609F22003429BD /* TableView.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B47964618609CD6003429BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B47969518609FCA003429BD /* SPTScrollViewScrubberSample_CollectionViewController.m in Sources */,
+				7B47965E18609CD7003429BD /* SPTScrollViewScrubberSample_AppDelegate.m in Sources */,
+				7B47969318609FCA003429BD /* SPTScrollViewScrubberSample_TableViewController.m in Sources */,
+				7B47969418609FCA003429BD /* SPTScrollViewScrubberSample_ScrollViewController.m in Sources */,
+				7B47965A18609CD7003429BD /* main.m in Sources */,
+				7B47968A18609F91003429BD /* SPTScrollViewScrubberController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B47967418609CD7003429BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7B47967518609CD7003429BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B47967718609CD7003429BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPTScrollViewScrubberSample/SPTScrollViewScrubberSample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SPTScrollViewScrubberSample/SPTScrollViewScrubberSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7B47967818609CD7003429BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SPTScrollViewScrubberSample/SPTScrollViewScrubberSample-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SPTScrollViewScrubberSample/SPTScrollViewScrubberSample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B47964518609CD6003429BD /* Build configuration list for PBXProject "SPTScrollViewScrubber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B47967418609CD7003429BD /* Debug */,
+				7B47967518609CD7003429BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B47967618609CD7003429BD /* Build configuration list for PBXNativeTarget "SPTScrollViewScrubber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B47967718609CD7003429BD /* Debug */,
+				7B47967818609CD7003429BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B47964218609CD6003429BD /* Project object */;
+}

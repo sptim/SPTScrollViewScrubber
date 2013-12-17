@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--company-id</key>
+	<string>net.mecking</string>
+	<key>--create-docset</key>
+	<false/>
+	<key>--create-html</key>
+	<true/>
+	<key>--explicit-crossref</key>
+	<true/>
+	<key>--keep-intermediate-files</key>
+	<true/>
+	<key>--keep-merged-sections</key>
+	<true/>
+	<key>--keep-undocumented-members</key>
+	<true/>
+	<key>--keep-undocumented-objects</key>
+	<true/>
+	<key>--merge-categories</key>
+	<true/>
+	<key>--merge-category-comment</key>
+	<true/>
+	<key>--prefix-merged-sections</key>
+	<true/>
+	<key>--print-information-block-titles</key>
+	<true/>
+	<key>--project-company</key>
+	<string>mecking.net</string>
+	<key>--project-name</key>
+	<string>SPTScrollViewScrubberController</string>
+	<key>--repeat-first-par</key>
+	<true/>
+	<key>--search-undocumented-doc</key>
+	<true/>
+	<key>--use-code-order</key>
+	<true/>
+	<key>--use-single-star</key>
+	<false/>
+	<key>--warn-empty-description</key>
+	<true/>
+	<key>--warn-invalid-crossref</key>
+	<true/>
+	<key>--warn-missing-arg</key>
+	<true/>
+	<key>--warn-missing-company-id</key>
+	<true/>
+	<key>--warn-missing-output-path</key>
+	<true/>
+	<key>--warn-undocumented-member</key>
+	<true/>
+	<key>--warn-undocumented-object</key>
+	<true/>
+	<key>--warn-unknown-directive</key>
+	<true/>
+	<key>--index-desc</key>
+	<string>README.md</string>
+	<key>--output</key>
+	<string>/tmp/doc</string>
+</dict>
+</plist>
