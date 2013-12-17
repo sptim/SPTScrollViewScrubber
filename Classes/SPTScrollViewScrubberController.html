@@ -1,0 +1,1524 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SPTScrollViewScrubberController Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 961)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">SPTScrollViewScrubberController </a></h1>
+				<a id="developerHome" href="../index.html">mecking.net</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SPTScrollViewScrubberController Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/scrollView">&nbsp;&nbsp;&nbsp;&nbsp;scrollView</option>
+	
+	<option value="//api/name/scrubberView">&nbsp;&nbsp;&nbsp;&nbsp;scrubberView</option>
+	
+	<option value="//api/name/horizontalScrubbing">&nbsp;&nbsp;&nbsp;&nbsp;horizontalScrubbing</option>
+	
+	<option value="//api/name/verticalScrubbing">&nbsp;&nbsp;&nbsp;&nbsp;verticalScrubbing</option>
+	
+	<option value="//api/name/minimumHorizontalScrollFactor">&nbsp;&nbsp;&nbsp;&nbsp;minimumHorizontalScrollFactor</option>
+	
+	<option value="//api/name/minimumVerticalScrollFactor">&nbsp;&nbsp;&nbsp;&nbsp;minimumVerticalScrollFactor</option>
+	
+	<option value="//api/name/edgeInsets">&nbsp;&nbsp;&nbsp;&nbsp;edgeInsets</option>
+	
+	<option value="//api/name/horizontalAlignment">&nbsp;&nbsp;&nbsp;&nbsp;horizontalAlignment</option>
+	
+	<option value="//api/name/verticalAlignment">&nbsp;&nbsp;&nbsp;&nbsp;verticalAlignment</option>
+	
+	<option value="//api/name/hideWhileZooming">&nbsp;&nbsp;&nbsp;&nbsp;hideWhileZooming</option>
+	
+	<option value="//api/name/selectOnContentSizeChange">&nbsp;&nbsp;&nbsp;&nbsp;selectOnContentSizeChange</option>
+	
+	<option value="//api/name/selectOnAnyContentOffsetChange">&nbsp;&nbsp;&nbsp;&nbsp;selectOnAnyContentOffsetChange</option>
+	
+	<option value="//api/name/highlightScrubberView">&nbsp;&nbsp;&nbsp;&nbsp;highlightScrubberView</option>
+	
+	<option value="//api/name/unhighlightScrubberView">&nbsp;&nbsp;&nbsp;&nbsp;unhighlightScrubberView</option>
+	
+	<option value="//api/name/selectScrubberView">&nbsp;&nbsp;&nbsp;&nbsp;selectScrubberView</option>
+	
+	<option value="//api/name/deselectScrubberView">&nbsp;&nbsp;&nbsp;&nbsp;deselectScrubberView</option>
+	
+	<option value="//api/name/deselectDelay">&nbsp;&nbsp;&nbsp;&nbsp;deselectDelay</option>
+	
+	<option value="//api/name/deselectAnimationDuration">&nbsp;&nbsp;&nbsp;&nbsp;deselectAnimationDuration</option>
+	
+	<option value="//api/name/scrubbing">&nbsp;&nbsp;&nbsp;&nbsp;scrubbing</option>
+	
+	<option value="//api/name/scrubberViewSelected">&nbsp;&nbsp;&nbsp;&nbsp;scrubberViewSelected</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/flashScrubberView">&nbsp;&nbsp;&nbsp;&nbsp;- flashScrubberView</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Views">Views</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scroll direction">Scroll direction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scrubber positioning">Scrubber positioning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Scrubber hiding / selecting / highlighting">Scrubber hiding / selecting / highlighting</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_State">State</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrollView">scrollView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrubberView">scrubberView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/horizontalScrubbing">horizontalScrubbing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verticalScrubbing">verticalScrubbing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumHorizontalScrollFactor">minimumHorizontalScrollFactor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minimumVerticalScrollFactor">minimumVerticalScrollFactor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/edgeInsets">edgeInsets</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/horizontalAlignment">horizontalAlignment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verticalAlignment">verticalAlignment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hideWhileZooming">hideWhileZooming</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectOnContentSizeChange">selectOnContentSizeChange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectOnAnyContentOffsetChange">selectOnAnyContentOffsetChange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/highlightScrubberView">highlightScrubberView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/unhighlightScrubberView">unhighlightScrubberView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectScrubberView">selectScrubberView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deselectScrubberView">deselectScrubberView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deselectDelay">deselectDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deselectAnimationDuration">deselectAnimationDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrubbing">scrubbing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/scrubberViewSelected">scrubberViewSelected</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flashScrubberView">flashScrubberView</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SPTScrollViewScrubberController Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SPTScrollViewScrubberController Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">UICollectionViewDelegate<br />UIScrollViewDelegate<br />UITableViewDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SPTScrollViewScrubberController.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Instances of <code>SPTScrollViewScrubberController</code> control a scrubber view to
+quickly scroll through an <code>UIScrollView</code> or any of its subclasses like
+<code>UITableView</code> or <code>UICollectionView</code>.</p>
+
+<p>It was inspired by <a href="http://nsscreencast.com/episodes/97-scrolling-nub">NSScreencast episode 97: Scrolling Nub (11/28/2013)</a>.</p>
+
+<h3>UIScrollViewDelegate</h3>
+
+<p>It is not necessary that SPTScrollViewController instances are the delegate
+of the scroll view as long as the following delegate callbacks get passed
+through:</p>
+
+<pre><code>-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+</code></pre>
+
+<p>And additionally these if zooming is enabled for the scroll view:</p>
+
+<pre><code>-(void)scrollViewDidZoom:(UIScrollView *)scrollView
+-(void)scrollViewWillBeginZooming:(UIScrollView *)scrollView withView:(UIView *)view
+-(void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Views" name="task_Views"></a>
+						<h3 class="subsubtitle task-title">Views</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrollView">&nbsp;&nbsp;scrollView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrubberView">&nbsp;&nbsp;scrubberView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Scroll direction" name="task_Scroll direction"></a>
+						<h3 class="subsubtitle task-title">Scroll direction</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/horizontalScrubbing">&nbsp;&nbsp;horizontalScrubbing</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verticalScrubbing">&nbsp;&nbsp;verticalScrubbing</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumHorizontalScrollFactor">&nbsp;&nbsp;minimumHorizontalScrollFactor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minimumVerticalScrollFactor">&nbsp;&nbsp;minimumVerticalScrollFactor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Scrubber positioning" name="task_Scrubber positioning"></a>
+						<h3 class="subsubtitle task-title">Scrubber positioning</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/edgeInsets">&nbsp;&nbsp;edgeInsets</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/horizontalAlignment">&nbsp;&nbsp;horizontalAlignment</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verticalAlignment">&nbsp;&nbsp;verticalAlignment</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Scrubber hiding / selecting / highlighting" name="task_Scrubber hiding / selecting / highlighting"></a>
+						<h3 class="subsubtitle task-title">Scrubber hiding / selecting / highlighting</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hideWhileZooming">&nbsp;&nbsp;hideWhileZooming</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectOnContentSizeChange">&nbsp;&nbsp;selectOnContentSizeChange</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectOnAnyContentOffsetChange">&nbsp;&nbsp;selectOnAnyContentOffsetChange</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/highlightScrubberView">&nbsp;&nbsp;highlightScrubberView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/unhighlightScrubberView">&nbsp;&nbsp;unhighlightScrubberView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectScrubberView">&nbsp;&nbsp;selectScrubberView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deselectScrubberView">&nbsp;&nbsp;deselectScrubberView</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deselectDelay">&nbsp;&nbsp;deselectDelay</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deselectAnimationDuration">&nbsp;&nbsp;deselectAnimationDuration</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flashScrubberView">&ndash;&nbsp;flashScrubberView</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="State" name="task_State"></a>
+						<h3 class="subsubtitle task-title">State</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrubbing">&nbsp;&nbsp;scrubbing</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/scrubberViewSelected">&nbsp;&nbsp;scrubberViewSelected</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/scrollView" title="scrollView"></a>
+	<h3 class="subsubtitle method-title">scrollView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The instance of <code>UIScrollView</code> or any of its subclasses to be used with
+the scrubber.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UIScrollView *scrollView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The instance of <code>UIScrollView</code> or any of its subclasses to be used with
+the scrubber.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrubberView" title="scrubberView"></a>
+	<h3 class="subsubtitle method-title">scrubberView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A <code>UIView</code> instance or any of its subclasses to be used as the scrubber.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) IBOutlet UIView *scrubberView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A <code>UIView</code> instance or any of its subclasses to be used as the scrubber.</p>
+
+<p>This view will be added as a subview to the scrollView object, if it has not
+already been added. The default is a simple 30x30 view with red background
+color and a corner radius of 15 which results in red dot.</p><div class="warning"><p><strong>Warning:</strong> There must not be any autolayout constraints affecting its
+          layout.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/horizontalScrubbing" title="horizontalScrubbing"></a>
+	<h3 class="subsubtitle method-title">horizontalScrubbing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines whether the scrubber should be used for
+horizontal scrolling.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL horizontalScrubbing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines whether the scrubber should be used for
+horizontal scrolling.</p>
+
+<p>The default value is <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verticalScrubbing" title="verticalScrubbing"></a>
+	<h3 class="subsubtitle method-title">verticalScrubbing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines whether the scrubber should be used for
+vertical scrolling.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL verticalScrubbing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines whether the scrubber should be used for
+vertical scrolling.</p>
+
+<p>The default value is <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumHorizontalScrollFactor" title="minimumHorizontalScrollFactor"></a>
+	<h3 class="subsubtitle method-title">minimumHorizontalScrollFactor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The minimum factor the content views width must be larger than the scroll
+views content areas width at which the scrubber can be used for horizontal
+scrolling.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat minimumHorizontalScrollFactor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The minimum factor the content views width must be larger than the scroll
+views content areas width at which the scrubber can be used for horizontal
+scrolling.</p>
+
+<p>The scroll views content area is determined by adjusting its bounds by its
+content insets. The minimumHorizontalScrollFactor must be greater than 1.0.
+The default value is <code>2.0</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minimumVerticalScrollFactor" title="minimumVerticalScrollFactor"></a>
+	<h3 class="subsubtitle method-title">minimumVerticalScrollFactor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The minimum factor the content views height must be larger than the scroll
+views content areas height at which the scrubber can be used for vertical
+scrolling.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat minimumVerticalScrollFactor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The minimum factor the content views height must be larger than the scroll
+views content areas height at which the scrubber can be used for vertical
+scrolling.</p>
+
+<p>The scroll views content area is determined by adjusting its bounds by its
+content insets. The minimumVerticalScrollFactor must be greater than 1.0.
+The default value is <code>2.0</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/edgeInsets" title="edgeInsets"></a>
+	<h3 class="subsubtitle method-title">edgeInsets</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The minimum distance the scrubber view is inset from the enclosing scroll
+view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) UIEdgeInsets edgeInsets</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The minimum distance the scrubber view is inset from the enclosing scroll
+view.</p>
+
+<p>The default value is <code>{10.0,10.0,10.0,10.0}</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/horizontalAlignment" title="horizontalAlignment"></a>
+	<h3 class="subsubtitle method-title">horizontalAlignment</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The alignment mode for the horizontal axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SPTScrollViewScrubberAlignment horizontalAlignment</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The alignment mode for the horizontal axis.</p>
+
+<p>The scrubber view is aligned according to this value if it is not used for
+horizontal scrolling or if the scrollable area is not large enough. The
+default value is <code>SPTScrollViewScrubberAlignmentNone</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/horizontalScrubbing">@property horizontalScrubbing</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/minimumHorizontalScrollFactor">@property minimumHorizontalScrollFactor</a></p></code></li>
+			
+			<li><code><p><a href="../Constants/SPTScrollViewScrubberAlignment.html">SPTScrollViewScrubberAlignment</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verticalAlignment" title="verticalAlignment"></a>
+	<h3 class="subsubtitle method-title">verticalAlignment</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The alignment mode for the vertical axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SPTScrollViewScrubberAlignment verticalAlignment</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The alignment mode for the vertical axis.</p>
+
+<p>The scrubber view is aligned according to this value if it is not used for
+vertical scrolling or if the scrollable area is not large enough. The
+default value is <code>SPTScrollViewScrubberAlignmentNone</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/verticalScrubbing">@property verticalScrubbing</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/minimumVerticalScrollFactor">@property minimumVerticalScrollFactor</a></p></code></li>
+			
+			<li><code><p><a href="../Constants/SPTScrollViewScrubberAlignment.html">SPTScrollViewScrubberAlignment</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hideWhileZooming" title="hideWhileZooming"></a>
+	<h3 class="subsubtitle method-title">hideWhileZooming</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines if the scrubber view should be hidden while
+the user performs a zoom gesture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL hideWhileZooming</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines if the scrubber view should be hidden while
+the user performs a zoom gesture.</p>
+
+<p>The default value is <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectOnContentSizeChange" title="selectOnContentSizeChange"></a>
+	<h3 class="subsubtitle method-title">selectOnContentSizeChange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines if the scrubber view should be selected when
+the scroll views content size changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL selectOnContentSizeChange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines if the scrubber view should be selected when
+the scroll views content size changes.</p>
+
+<p>The default value is <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectOnAnyContentOffsetChange" title="selectOnAnyContentOffsetChange"></a>
+	<h3 class="subsubtitle method-title">selectOnAnyContentOffsetChange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines if the scrubber view should be selected when
+the scroll views content offset changes for any reason.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL selectOnAnyContentOffsetChange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines if the scrubber view should be selected when
+the scroll views content offset changes for any reason.</p>
+
+<p>If this value is <code>NO</code> the scrubber view will only be selected if content
+offset changes have been caused by a drag gesture.
+Otherwise the scrubber gets selected for any change of the scroll position,
+e.g. status bar taps, programmatically changes to the content offset, or
+content size being shrinked.</p>
+
+<p>The default value is <code>YES</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/highlightScrubberView" title="highlightScrubberView"></a>
+	<h3 class="subsubtitle method-title">highlightScrubberView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block which changes properties of the scrubber view to highlight it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( UIView *view ) highlightScrubberView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block which changes properties of the scrubber view to highlight it.</p>
+
+<p>This is called when the scrubbing property changes to <code>YES</code>, i.e. a drag
+operation on the scrubber view begins. The default block sets the views
+highlighted property if it responds to -setHighlighted:.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/unhighlightScrubberView" title="unhighlightScrubberView"></a>
+	<h3 class="subsubtitle method-title">unhighlightScrubberView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block which changes properties of the scrubber view to unhighlight it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( UIView *view ) unhighlightScrubberView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block which changes properties of the scrubber view to unhighlight it.</p>
+
+<p>This is called when the scrubbing property changes to <code>NO</code>, i.e. a drag
+operation on the scrubber view ends. The default block unsets the views
+highlighted propertxy if it responds to -setHighlighted:.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectScrubberView" title="selectScrubberView"></a>
+	<h3 class="subsubtitle method-title">selectScrubberView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block which changes properties of the scrubber view to select it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( UIView *view ) selectScrubberView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block which changes properties of the scrubber view to select it.</p>
+
+<p>This is used in select animation or called directly when the view needs to
+selected immediatly. The default block sets the scrubber views alpha
+value to 1.0 and sets the views selected property if it responds to
+-setSelected:.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deselectScrubberView" title="deselectScrubberView"></a>
+	<h3 class="subsubtitle method-title">deselectScrubberView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A block which changes properties of the scrubber view to unselect it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) void ( ^ ) ( UIView *view ) deselectScrubberView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A block which changes properties of the scrubber view to unselect it.</p>
+
+<p>This is used in unselect animation. The default block sets the scrubber views
+alpha value to 0.3 and unsets its selected property if it responds to
+-setSelected:.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deselectDelay" title="deselectDelay"></a>
+	<h3 class="subsubtitle method-title">deselectDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time interval by which the unselection gets delayed after scrolling.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval deselectDelay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The time interval by which the unselection gets delayed after scrolling.</p>
+
+<p>The default value is 0.75 seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deselectAnimationDuration" title="deselectAnimationDuration"></a>
+	<h3 class="subsubtitle method-title">deselectAnimationDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A time interval value that determines the duration of deselect animations.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSTimeInterval deselectAnimationDuration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A time interval value that determines the duration of deselect animations.</p>
+
+<p>The default value is 0.5 seconds.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrubbing" title="scrubbing"></a>
+	<h3 class="subsubtitle method-title">scrubbing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines if the user is currently dragging the
+scrubber view.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isScrubbing) BOOL scrubbing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines if the user is currently dragging the
+scrubber view.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/scrubberViewSelected" title="scrubberViewSelected"></a>
+	<h3 class="subsubtitle method-title">scrubberViewSelected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A Boolean value that determines if the scrubber view is currently selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isScrubberViewSelected) BOOL scrubberViewSelected</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A Boolean value that determines if the scrubber view is currently selected.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/flashScrubberView" title="flashScrubberView"></a>
+	<h3 class="subsubtitle method-title">flashScrubberView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flashes the scrubber view by selecting immediately and deselecting it
+animated.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)flashScrubberView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Flashes the scrubber view by selecting immediately and deselecting it
+animated.</p>
+
+<p>This method has no effect if the scrubber view is selected.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SPTScrollViewScrubberController.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 mecking.net. All rights reserved. (Last updated: 2013-12-17)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 961)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
