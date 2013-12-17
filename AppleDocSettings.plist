@@ -57,6 +57,6 @@
 	<key>--index-desc</key>
 	<string>README.md</string>
 	<key>--output</key>
-	<string>/tmp/doc</string>
+	<string>doc</string>
 </dict>
 </plist>
