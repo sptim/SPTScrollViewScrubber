@@ -9,6 +9,36 @@ It was inspired by [NSScreencast episode 97: Scrolling Nub (11/28/2013)][1].
 [1]: http://nsscreencast.com/episodes/97-scrolling-nub
 
 
+License
+-------
+
+SPTScrollViewScrubberController and SPTScrollViewScrubberSample are released
+under MIT License.
+It is highly appreciated, though not required, to include a link to 
+[http://www.mecking.net/ios-apps/](http://www.mecking.net/ios-apps/) anywhere
+in your app or on your website.
+
+
+Obtaining the source
+--------------------
+
+The source code is available on github at 
+[https://github.com/sptim/SPTScrollViewScrubber][2].
+
+[AppleDoc][3] generated documentation can be browsed at
+[http://sptim.github.io/SPTScrollViewScrubber/][4].
+
+SPTScrollViewScrubberController is also available using [Cocoapods][5]. Add 
+this to your `Podfile` and run `pod install`:
+
+	pod 'SPTScrollViewScrubber'
+
+[2]: https://github.com/sptim/SPTScrollViewScrubber/
+[3]: http://gentlebytes.com/appledoc/
+[4]: http://sptim.github.io/SPTScrollViewScrubber/
+[5]: http://cocoapods.org/
+
+
 
 Using SPTScrollViewScrubberController with UITableView
 ------------------------------------------------------
