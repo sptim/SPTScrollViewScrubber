@@ -28,7 +28,7 @@ The source code is available on github at
 [AppleDoc][3] generated documentation can be browsed at
 [http://sptim.github.io/SPTScrollViewScrubber/][4].
 
-SPTScrollViewScrubberController is also available using [Cocoapods][5]. Add 
+SPTScrollViewScrubberController is also available using [CocoaPods][5]. Add 
 this to your `Podfile` and run `pod install`:
 
 	pod 'SPTScrollViewScrubber'
